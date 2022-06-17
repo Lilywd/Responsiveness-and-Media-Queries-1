@@ -54,8 +54,17 @@ p{
     width: 200px;
     box-shadow: 0 3px 10px rgb(0,0,0,0.4);
     margin: 50px;
-    float:left;
+    
+    /*animation*/
+    
+    z-index: 0;
+    animation: move 3s linear infinite alternate;
 }
+@keyframes move {
+    from { z-index: 0; transform: scale(1); }
+    to { z-index: 2; transform: scale(2); }
+  }
+
 .borders{
     margin: 80px;
     border-style: solid;
@@ -64,6 +73,7 @@ p{
     height: 300px;
     border-radius: 10px;
     border-color: white;
+   
     
 }
 .left-text{
@@ -79,9 +89,7 @@ p{
 }
 
 .center-border{
-    
-    margin-left:auto;
-    margin-right:auto;
+    margin:-80px 500px ;
     display:block;
     width:30%;
     height: 150px;
@@ -91,24 +99,18 @@ p{
     border-radius: 10px;
     border-color: white;
     text-align: center;
-    /*animation*/
     position:relative;
-    z-index: 0;
-    animation: move 3s linear infinite alternate;
+    z-index:1;
 }
-@keyframes move {
-    from { z-index: 0; transform: scale(1); }
-    to { z-index: 2; transform: scale(2); }
-  }
-footer{
     
+footer{
+    z-index:-1;
     color:white;
     font-size:18px;
     background-color: hsl(192, 100%, 9%);
     background-size: cover;
     /*animation*/
     
-     
 }
 
 
@@ -140,7 +142,7 @@ a:hover{
 .grid > div {
   
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     
 }
 
