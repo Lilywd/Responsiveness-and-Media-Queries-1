@@ -1,12 +1,12 @@
-*
-{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+*  {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-header
-{   background-image: url("images/bg-hero-desktop.svg");
+header {   
+    background-image: url("images/bg-hero-desktop.svg");
     background-size: cover;
     height: 600px;
     background-color: hsl(193, 100%, 96%);;
@@ -16,8 +16,7 @@ header
     float:left;
 }
 
-nav ul
-{
+nav ul {
    list-style: none;
    padding: 50px;
 }
@@ -62,17 +61,19 @@ p{
 }
 @keyframes move {
     from { z-index: 0; transform: scale(1); }
-    to { z-index: 2; transform: scale(2); }
+    to { z-index: 2; transform: scale(1.5); }
   }
 
 .borders{
     margin: 80px;
+    margin-bottom: 50px;
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 3px 10px rgba(121, 120, 120, 0.4);
     height: 300px;
     border-radius: 10px;
     border-color: white;
+    position: relative;
    
     
 }
@@ -89,21 +90,24 @@ p{
 }
 
 .center-border{
-    margin:-80px 500px ;
-    display:block;
-    width:30%;
-    height: 150px;
-    padding:10px;
     border-style: solid;
     box-shadow: 0 3px 10px rgba(121, 120, 120, 0.4);
-    border-radius: 10px;
     border-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    width: 40%;
+    margin-top: -80px;
     text-align: center;
-    position:relative;
-    z-index:1;
+    background-color: white;
+    
+    
+
 }
     
 footer{
+    position: relative;
     z-index:-1;
     color:white;
     font-size:18px;
@@ -131,7 +135,7 @@ footer{
     float:left;
     background-color: hsl(192, 100%, 9%);
     width:100%;
-    padding:30px;
+    align-content: center;
 
 }
 a:hover{
@@ -142,9 +146,11 @@ a:hover{
 .grid > div {
   
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
     
 }
+/*media queries*/
+
 
 
 
