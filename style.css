@@ -35,6 +35,7 @@ nav ul {
 }
 h1 {
     font-weight:bold;
+    font-family:[Poppins];
     
 }
 p{
@@ -138,7 +139,7 @@ footer{
     align-content: center;
 
 }
-a:hover{
+.grid:hover{
     text-decoration: underline;
     
 }
@@ -149,8 +150,5 @@ a:hover{
     padding: 10px 0;
     
 }
-/*media queries*/
-
-
 
 
